@@ -1,13 +1,9 @@
 CDM: The Console Display Manager
 ================================
 
-New version 0.7: 
+Adds on top of `pale3/cdm-0.7`:
 
-	- removed consolekit support 
-	- removed xtty
-	- removed altstartx
-	- cdmrc edited for new version
-	- cdm-xlaunch removed 
+	- invocate bin from binlist (e.g. `startx ${bin} -- ${serveropts}`, where ${bin} comes from cdm selection)
 
 Invocation
 ----------
@@ -49,4 +45,3 @@ Thanks to:
     CasperVector    Massive rearchitecturing and code sanitation
 
 Licensed under GPLv2+
-
