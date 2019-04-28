@@ -1,9 +1,9 @@
 CDM: The Console Display Manager
 ================================
 
-Adds on top of `pale3/cdm-0.7`:
+Adds on top of `pale3/cdm:0.7`:
 
- - invocate bin from binlist (e.g. `startx ${bin} -- ${serveropts}`, where `${bin}` is the binary selected in the cdm menu)
+ - invocates bin from binlist (`startx ${bin} -- ${serveropts}`, where `${bin}` is the binary selected in the cdm menu)
 
 Invocation
 ----------
