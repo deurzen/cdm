@@ -8,24 +8,24 @@
 # offered as choices.
 #
 # (An example:)
-#binlist=(
-#   '~/.xinitrc'                  	# Launch your X session,
-#   '/bin/bash --login'             # or just execute your shell,
-#   '/usr/bin/fbterm'               # or start a frame buffer console,
-#   '/usr/bin/reboot'								# or go to a submenu :)
-#   '/usr/bin/shutdown'							# or go to a submenu :)
-#   '/usr/bin/cdm ~/.submenu.cdmrc' # or go to a submenu :)
-#)
+binlist=(
+   '~/.xinitrc'                    # Launch your X session,
+   '/bin/bash --login'             # or just execute your shell,
+   '/usr/bin/fbterm'               # or start a frame buffer console,
+   '/usr/bin/reboot'               # or go to a submenu :)
+   '/usr/bin/shutdown'             # or go to a submenu :)
+   '/usr/bin/cdm ~/.submenu.cdmrc' # or go to a submenu :)
+)
 
 # List all program display names, one-by-one matched with $binlist.
 # Names with whitespaces should be quoted or escaped.
 #
 # (Continued example:)
-namelist=('X Session' Shell FBterm reboot shutdown 'Sub-Menu')
+namelist=(xinit shell fbterm reboot shutdown submenu)
 
 # Type of the programs, one-by-one matched with $binlist.
 # `C' for *C*onsole programs, which would be `exec'ed.
-# `X' for *X* programs, which would be run with cdm-xlaunch(1).
+# `X' for *X* programs, which would be run with startx(1).
 #
 # (Continued example:)
 flaglist=(X C C C C C)
